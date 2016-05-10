@@ -3,13 +3,17 @@
 .mb10 {margin-bottom: 10px!important;}
 .mb5 {margin-bottom: 5px!important;}
 .ml10 {margin-left: 10px!important;}
+.ml5 {margin-left: 5px!important;}
 .mr10 {margin-right: 10px!important;}
 ul li {list-style: none;}
 a {text-decoration: none; color: #000;}
 .fx-bg {background: #F0F0F0;}
 .am-navbar-default .am-navbar-nav {
-  background-color: #4caf50;
+  background-color: #fff;
 }
+/*.am-navbar-default .am-navbar-nav {
+  background-color: #4caf50;
+}*/
 .fx-color {color: #f76d02;}
 .fx-border-bottom {border-bottom: 1px solid #777777;padding-bottom: 5px;}
 /*商城首页*/
@@ -25,7 +29,10 @@ a {text-decoration: none; color: #000;}
 	margin: 20px 0;
 }
 .fx-home-navbar-icon {
-	padding: 5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
 	font-size: 30px;
 	background: #4caf50;
 	color: #fff;
@@ -35,6 +42,104 @@ a {text-decoration: none; color: #000;}
 }
 .fx-home-navbar a li p{
 	margin: 0;
+}
+.am-btn, button, input:not([type=radio]):not([type=checkbox]), select {
+  vertical-align: baseline; 
+}
+/*商城首页-产品推荐*/
+.fx-home-tuiguang-top {
+	margin-top: 30px;
+}
+.fx-home-tuiguang-top div {
+	width: 100px;
+	margin-top: -15px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 999;
+	padding: 2px;
+	background: #F0F0F0;
+	text-align: center;
+}
+.fx-home-tuiguang-ul {
+	width: 100%;
+	margin: 0;
+	padding: 0px 0;
+}
+.fx-home-tuiguang-ul a li{
+	width: 44%;
+	/*height: 300px;*/
+	overflow: hidden;
+	float: left;
+	margin: 20px 3%;
+	padding-bottom: 10px;
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+	background: #fff;
+}
+.fx-home-tuiguang-ul a li img{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+}
+.fx-home-title {
+	font-size: 12px;
+	height: 40px;
+	font-weight: 600;
+	overflow: hidden;
+}
+.fx-home-price {
+	font-size: 12px;
+	display: inline;
+}
+.fx-home-price span {
+	font-size: 16px;
+	color: red;
+}
+.fx-home-adr {
+	color: #3C3C3C !important;
+	font-size: 12px !important;
+	margin-right: 10px;
+}
+.fx-sm {
+	font-size: 12px !important;
+}
+
+.fx-home-tuiguang-nar {
+	background: #4caf50;
+	height: 40px;
+}
+.fx-home-tuiguang-nar-title {
+	color: #fff;
+	border-left: 2px solid #fff;
+	padding-left: 10px;
+	margin-left: 10px;
+	line-height: 40px;
+	height: 40px;
+}
+.fx-home-nav {
+	position: fixed;
+	right: 10px;
+	bottom: 130px;
+	color: #fff;
+	background:#4caf50 ;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.fx-home-nav-li {
+	width: 33% !important;
+}
+.fx-bottom {
+	color: #1A1A1A !important;
+}
+.fx-bottom-on {
+	color: #4caf50 !important;
 }
 /*代理专区*/
 .p0 {padding: 0;}
@@ -159,7 +264,7 @@ a {text-decoration: none; color: #000;}
   vertical-align: middle;
 }
 .am-modal-dialog{
-	margin-top: -120%;
+	margin-top: 50px;
 }
 .fx-more-list {
 	padding: 10px;
