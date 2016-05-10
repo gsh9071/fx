@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>商品详情页面</title>
+  	<link rel="stylesheet" href="css/font-awesome.min.css" />
+  	<link rel="stylesheet" href="css/amazeui.min.css">
+  	<link rel="stylesheet" href="css/app.css">
+  	<link rel="stylesheet" href="css/style.css"></link>
+</head>
+<body class="fx-bg">
+
+	<div class="am-g">
+  		<div class="am-u-sm-12 am-u-sm-centered p0">
+  			<!--头部导航栏-->
+  			<div class="fx-production-top" data-am-sticky>
+  				<a href="#doc-oc-demo1" class="am-fl ml10" data-am-offcanvas><i class="fa fa-bars mr10"></i></a>
+  				<span>商品详情</span>
+  				<a href="" class="am-fr mr10"><i class="fa fa-shopping-cart"></i></a>
+  			</div>
+  			<!-- 头部侧边栏内容 -->
+			<div id="doc-oc-demo1" class="am-offcanvas">
+  				<div class="am-offcanvas-bar fx-user-bg">
+    				<div class="am-offcanvas-content">
+      					<div class="fx-user-l-top mt10">
+  							<a href=""><img src="i/app-icon72x72@2x.png" /></a>
+  						</div>
+  						<div class="mt10">
+  							<ul class="fx-user-txt">
+  								<li>昵称：王毅</li>
+		  						<li>等级：消费商</li>
+		  						<li>已认证</li>
+		  						<li>关注时间：2016-01-01</li>
+		  					</ul>
+		  				</div>
+		    		</div>
+  				</div>
+			</div>
+			
+			<!--商品图片轮播-->
+			<div class="am-slider am-slider-default" data-am-flexslider>
+  				<ul class="am-slides">
+    				<li> <img src="i/examples/adminPage.png" /> </li>
+    				<li> <img src="i/examples/adminPage.png" /> </li>
+    				<li> <img src="i/examples/adminPage.png" /> </li>
+  				</ul>
+			</div>
+			
+			<!--商品标题和价格-->
+			<div class="fx-main">
+				<h4 class="fx-title mt5 mb5">【衬衣】2016春装新款女装长袖条纹衬衣学生韩版修身百搭学院风圆领衬衫女</h4>
+				<p class="fx-fanli mt10 mb10"><span class="fx-adr">青岛</span><span class="fx-fl">返利<span>10.00</span></span><span class="fx-renzheng">已认证</span></p>
+				<p class="fx-price mt10 mb10">商品价格:<span>￥50.00</span></p>
+				<!--模拟框弹出收藏菜单-->
+				<div class="fx-more">
+					<i class="fa fa-plus-circle fx-color" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 320, height: 100}"></i>
+  					<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+  						<div class="am-modal-dialog">
+    						<div class="am-modal-hd">
+      							<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    						</div>
+    						<div class="am-modal-bd">
+      							<ul class="fx-more-list">
+      								<a href=""><li>
+      									<i class="fa fa-home"></i>
+      									<p>他的店铺</p>
+      								</li></a>
+      								<a href=""><li>
+      									<i class="fa fa-bank"></i>
+      									<p>收藏店铺</p>
+      								</li></a>
+      								<a href=""><li>
+      									<i class="fa fa-star"></i>
+      									<p>收藏商品</p>
+      								</li></a>
+      								<a href=""><li>
+      									<i class="fa fa-envelope"></i>
+      									<p>卖家私信</p>
+      								</li></a>
+      							</ul>
+    						</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--商品属性-->
+			<div class="fx-main mt10">
+				<h3 class="fx-title mt5 mb5 fx-border-bottom">颜色选择</h3>
+				<p class="fx-shuxing">
+					<a href="" class="fx-production">
+						<span>蓝白条纹</span>
+					</a>
+					<a href=""  class="fx-production-selected">
+						<span>黑白条纹</span>
+					</a>
+				</p>
+				<h3 class="fx-title mt5 mb5 fx-border-bottom">尺寸选择</h3>
+				<p class="fx-shuxing">
+					<a href="" class="fx-production">
+						<span>M</span>
+					</a>
+					<a href=""  class="fx-production-selected">
+						<span>L</span>
+					</a>
+				</p>
+				
+			</div>
+			
+			<!--商品运费-->
+			<div class="fx-main mt10">
+				<p>
+					<span class="mr10">
+						配送
+						<select>
+							<option>青岛</option>
+							<option>济南</option>
+						</select>
+					</span>
+					<span class="ml10">运费<span class="fx-color ml10">10.00</span></span>
+				</p>
+				<p>
+					<span class="mr10">
+						数量
+						<select>
+							<option>青岛</option>
+							<option>济南</option>
+						</select>
+					</span>
+					<span class="ml10">库存<span class="ml10">999</span></span>
+					<span><button type="submit" class="am-btn am-btn-primary fx-buy-btn am-fr">加入购物车</button></span>
+				</p>
+				
+			</div>
+			
+			<!--商品详情-->
+			<div class="fx-main mt10">
+				<img src="img/0088.png" />
+				
+			</div>
+			
+			<!--商品购买按钮-->
+			<div class="fx-main mt10">
+				<button type="submit" class="am-btn am-btn-primary am-btn-block fx-buy-btn">立即购买</button>
+				
+			</div>
+			
+			<!--底部导航栏-->
+			<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default "id="">
+      			<ul class="am-navbar-nav am-cf am-avg-sm-4">
+          			<li >
+            			<a href="" class="">
+                			<i class="fa fa-home mt10"></i>
+                			<span class="am-navbar-label">首页</span>
+            			</a>
+          			</li>
+          			<li >
+            			<a href="#" class="">
+                			<i class="fa fa-th mt10"></i>
+                			<span class="am-navbar-label">分类</span>
+            			</a>
+          			</li>
+          			<li>
+            			<a href="###" class="">
+                			<i class="fa fa-heart mt10"></i>
+                			<span class="am-navbar-label">收藏</span>
+            			</a>
+          			</li>
+          			<li >
+            			<a href="#" class="">
+                			<i class="fa fa-search mt10"></i>
+                			<span class="am-navbar-label">搜索</span>
+            			</a>
+          			</li>
+      			</ul>
+  			</div>
+
+			
+  		</div>
+	</div>
+	
+	
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+</body>
+</html>
