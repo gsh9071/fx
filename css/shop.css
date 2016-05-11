@@ -1,5 +1,35 @@
-/*会员中心-商品修改*/
+/*会员中心*/
 .fx-btn-center {
 	margin: 0 auto !important;
 	display: block;
+}
+.fx-shop-list {
+	padding: 0;
+}
+.fx-shop-list li{
+	height: 120px;
+	 border-bottom: 1px solid #BABABA;
+}
+.fx-shop-list-logo {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+.fx-shop-list-logo img {
+	width: 100%;
+}
+.fx-shop-list-txt {
+	padding-top: 10px;
+	margin-left: 110px;
+}
+.fx-shop-list-txt p,h6 {
+	margin: 5px 0;
+}
+.fx-shop-list-txt h6 {
+	height: 20px;
+	overflow: hidden;
+}
+.fx-shop-list-price {
+	font-size: 14px;
+	color: #474747;
 }
