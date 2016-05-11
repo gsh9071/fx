@@ -8,7 +8,7 @@
 }
 .fx-shop-list li{
 	height: 120px;
-	 border-bottom: 1px solid #BABABA;
+	border-bottom: 1px solid #BABABA;
 }
 .fx-shop-list-logo {
 	width: 100px;
@@ -19,17 +19,86 @@
 	width: 100%;
 }
 .fx-shop-list-txt {
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 	margin-left: 110px;
 }
 .fx-shop-list-txt p,h6 {
 	margin: 5px 0;
 }
 .fx-shop-list-txt h6 {
-	height: 20px;
+	height: 30px;
 	overflow: hidden;
 }
 .fx-shop-list-price {
 	font-size: 14px;
 	color: #474747;
 }
+/*会员中心-我的订单-商品列表*/
+.fx-order-num {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #BABABA;
+	font-size: 16px;
+}
+.fx-order-num p{
+	margin: 0;
+}
+.fx-order-num p span {
+	float: right;
+	margin-right: 10px;
+	font-size: 12px;
+	line-height: 30px;
+	color: #3C3C3C;
+}
+.fx-order-list {
+	background: #F2F2F2;
+}
+.fx-order-list-price {
+	font-size: 14px;
+	float: right;
+}
+
+
+/*会员中心-我的订单-商品详情*/
+.fx-order-adr p{
+	margin: 10px 0;
+}
+.fx-order-adr2 {
+	line-height: 50px;
+	width: 50px;
+	text-align: center;
+	font-size: 30px;
+	margin-left: -10px;
+}
+.fx-order-adr3 {
+	padding-left:50px;
+}
+
+/*会员中心-我的订单*/
+.fx-order {
+	padding: 20px 0;
+	text-align: center;
+	background: #fff;
+}
+.fx-myorder {
+	font-size: 30px;
+	color: #262626;
+}
+.fx-order li {
+  	float: left;
+  	width: 33.3%;
+  	height: 90px;
+}
+.kl {
+	position: relative;
+	top: -20px;
+	left: -5px;
+}
+
+
+
+
+
+
+
+
+
