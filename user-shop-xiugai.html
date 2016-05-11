@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>会员中心-商品修改</title>
+  	<link rel="stylesheet" href="css/font-awesome.min.css" />
+  	<link rel="stylesheet" href="css/amazeui.min.css">
+  	<link rel="stylesheet" href="css/app.css">
+  	<link rel="stylesheet" href="css/shop.css" />
+  	<link rel="stylesheet" href="css/style.css"></link>
+</head>
+<body class="fx-bg">
+
+	<div class="am-g">
+  		<div class="am-u-sm-12 am-u-sm-centered p0">
+  			<!--头部导航-->
+  			<div class="fx-sx-top">
+  				<a href="user-shop.html"> <i class="fa  fa-chevron-left ml10"></i></a>
+  				<span>商品修改</span>
+  			</div>
+  			
+  			<!--头部用户信息-->
+  			<div class="fx-main" style="background: url(img/001.jpg) no-repeat center;background-size:100%;">
+  				<div class="fx-user-top am-fl mt10">
+  					<img src="i/app-icon72x72@2x.png" />
+  				</div>
+  				<div class="fx-user mt10">
+  					<ul>
+  						<li>昵称：王毅</li>
+  						<li>等级：消费商</li>
+  						<li>已认证</li>
+  						<li>关注时间：2016-01-01</li>
+  					</ul>
+  				</div>
+  			</div>
+  			
+  			
+  			<!--功能列表面板-->
+  			<table class="am-table am-table-bordered am-table-radius am-table-striped mt10">
+  				<tr>
+  					<td>商品属性</td>
+  					<td>
+  						 <div class="am-form-group">
+      						<label class="am-radio-inline am-success">
+        						<input type="radio" name="radio3" value="" data-am-ucheck> 商品属性1
+      						</label>
+      						<label class="am-radio-inline am-success">
+        						<input type="radio" name="radio3" value="" data-am-ucheck> 商品属性2
+      						</label>
+    					</div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>选择分类</td>
+  					<td>
+  						 <div class="am-form-group">
+      						<label class="am-radio-inline am-success">
+        						<input type="radio" name="radio3" value="" data-am-ucheck> 分类1
+      						</label>
+      						<label class="am-radio-inline am-success">
+        						<input type="radio" name="radio3" value="" data-am-ucheck> 分类2
+      						</label>
+    					</div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>商品名称</td>
+  					<td>
+  						<input type="text" class="am-form-field am-radius" placeholder="商品名称" />
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>地区</td>
+  					<td>
+  						<select data-am-selected="{searchBox: 1,maxHeight: 150}">
+  							<option value=" ">青岛</option>
+  							<option value=" ">济南</option>
+  							<option value=" ">北京</option>
+  							<option value=" ">上海</option>
+  							<option value=" ">威海</option>
+  							<option value=" ">烟台</option>
+  							<option value=" ">潍坊</option>
+						</select>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>售价</td>
+  					<td>
+  						<input type="text" class="am-form-field am-radius" placeholder="售价" />
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>赠送购物积分</td>
+  					<td>
+  						<input type="text" class="am-form-field am-radius" placeholder="赠送购物积分" />
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>返利数</td>
+  					<td>
+  						<input type="text" class="am-form-field am-radius" placeholder="返利数" />
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>是否包邮</td>
+  					<td>
+  						 <div class="am-form-group">
+      						<label class="am-radio-inline">
+        						<input type="radio"  value="" name="docInlineRadio"> 包邮
+      						</label>
+      						<label class="am-radio-inline">
+        						<input type="radio" name="docInlineRadio"> 不包邮
+      						</label>
+    					</div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>邮费</td>
+  					<td>
+  						<input type="text" class="am-form-field am-radius" placeholder="邮费" />
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>商品banner</td>
+  					<td>
+  						<div class="am-form-group am-form-file">
+  							<button type="button" class="am-btn am-btn-danger am-btn-sm"><i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
+  							<input id="doc-form-file" type="file" multiple>
+						</div>
+						<div id="file-list"></div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>详情描述</td>
+  					<td class="am-panel" data-am-modal="{target: '#my-alert'}">
+  						<button type="button" class="am-btn am-btn-warning"><i class="fa fa-edit"></i>修改详情描述</button>
+  					</td>
+  					<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+	  					<div class="am-modal-dialog">
+	    					<div class="am-modal-bd">
+	       						修改详情描述
+	      						
+								<div class="am-form-group am-gotop-default">
+									<div class="am-btn-toolbar">
+	  									<div class="am-btn-group  fx-btn-center">
+	  										<div class="am-btn-group am-btn-group-xs">
+	  											<button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-left"></i></button> 
+	  											<button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-center"></i></button> 
+	  											<button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-right"></i></button> 
+	  											<button type="button" class="am-btn am-btn-primary"><i class="am-icon-align-justify"></i></button>
+	  											<button type="button" class="am-btn am-btn-primary"><i class="am-icon-font"></i></button> 
+	  											<button type="button" class="am-btn am-btn-primary"><i class="am-icon-bold"></i></button> 
+	  											<button type="button" class="am-btn am-btn-primary"><i class="am-icon-italic"></i></button> 
+	  										</div>
+										</div>
+	
+									</div>
+	      							<textarea class="" rows="5" id="doc-ta-1"></textarea>
+	    						</div>
+	    					</div>
+	    					<div class="am-modal-footer">
+	      						<span class="am-modal-btn">确定</span>
+	    					</div>
+	  					</div>
+					</div>
+  				</tr>
+  				
+  			</table>
+  			
+  			<div class="fx-main mt10">
+				<button type="submit" class="am-btn am-btn-primary am-btn-block fx-buy-btn">发布商品</button>	
+			</div>
+  			
+  		</div>
+	</div>
+	
+	
+
+<script>
+  $(function() {
+    $('#doc-form-file').on('change', function() {
+      var fileNames = '';
+      $.each(this.files, function() {
+        fileNames += '<span class="am-badge">' + this.name + '</span> ';
+      });
+      $('#file-list').html(fileNames);
+    });
+  });
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+</body>
+</html>
