@@ -166,6 +166,10 @@ a {text-decoration: none; color: #000;}
 .fx-buy-btn {
 	background: #f76d02;
 	border-color:  #f76d02;
+	padding: 3px 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 }
 .fx-buy-btn:hover {
 	background: #D75E00;
