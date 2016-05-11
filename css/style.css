@@ -131,6 +131,7 @@ a {text-decoration: none; color: #000;}
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	z-index: 999999;
 }
 .fx-home-nav-li {
 	width: 33% !important;

@@ -94,7 +94,17 @@
 	left: -5px;
 }
 
-
+.fx-pj {
+	font-size: 14px;
+	color: #000000;
+	margin-left: 20px;
+}
+.fx-pl {
+	background: #F0F0F0;
+}
+.fx-fbpj {
+	font-size: 14px !important;
+}
 
 
 

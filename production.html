@@ -10,6 +10,7 @@
   	<link rel="stylesheet" href="css/font-awesome.min.css" />
   	<link rel="stylesheet" href="css/amazeui.min.css">
   	<link rel="stylesheet" href="css/app.css">
+  	<link rel="stylesheet" href="css/shop.css" />
   	<link rel="stylesheet" href="css/style.css"></link>
 </head>
 <body class="fx-bg">
@@ -109,7 +110,70 @@
 			
 			<!--商品详情-->
 			<div class="fx-main mt10">
-				<img src="img/0088.png" />
+				<div class="am-tabs am-tabs-d2" data-am-tabs>
+  				<ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify am-cf">
+    				<li class="am-active"><a href="#tab1">商品详情</a></li>
+    				<li><a href="#tab2">评价（2）</a></li>
+  				</ul>
+
+  				<div class="am-tabs-bd">
+    				<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+   						<img src="img/0088.png" />
+						
+    				</div>
+    				<div class="am-tab-panel am-fade" id="tab2">
+    					<!--评论内容-->
+              			<div class="fx-pl">
+	      					<div class="am-panel am-panel-warning">
+	    						<div class="am-panel-hd">王毅<span class="fx-pj">很好</span></div>
+	    						<div class="am-panel-bd">产品不错</div>
+	  						</div>
+  							<div class="am-panel am-panel-warning">
+    							<div class="am-panel-hd">王一<span class="fx-pj">非常好</span></div>
+    							<div class="am-panel-bd">产品不错</div>
+  							</div>
+						</div>
+						
+						<hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+						
+						<div class="fx-fbpj">
+								<div class="am-panel am-panel-success">
+									<div class="am-panel-hd">用户名： 王毅</div>
+    								<div class="am-panel-bd">
+    									<div class="am-form-group">
+		  									<label class="am-radio-inline">
+		    									<input type="radio" name="radio10" value="male" data-am-ucheck> 非常好
+		  									</label>
+		  									<label class="am-radio-inline">
+		    									<input type="radio" name="radio10" value="female" data-am-ucheck> 很好
+		  									</label>
+		  									<label class="am-radio-inline">
+		    									<input type="radio" name="radio10" value="pig" data-am-ucheck> 一般
+		  									</label>
+		  									<label class="am-radio-inline">
+		    									<input type="radio" name="radio10" value="pig" data-am-ucheck> 不行
+		  									</label>
+		  									<label class="am-radio-inline">
+		    									<input type="radio" name="radio10" value="pig" data-am-ucheck> 很差
+		  									</label>
+										</div>
+										<form action="" class="am-form">
+  											<fieldset>
+    											<legend>填写评论：</legend>
+    											<div class="am-form-group">
+      												<textarea id="doc-vld-ta-2" minlength="10" maxlength="100"></textarea>
+    											</div>
+    											<button type="button" class="am-btn am-btn-secondary am-round">提交</button>
+  											</fieldset>
+										</form>
+									</div>
+  								</div>
+								
+							</p>
+						</div>
+    				</div>
+  				</div>
+			</div>
 				
 			</div>
 			
