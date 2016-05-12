@@ -44,15 +44,29 @@
   				<tr>
   					<td>商品属性</td>
   					<td>
-  						 <div class="am-form-group">
-      						<label class="am-radio-inline am-success">
-        						<input type="radio" name="radio3" value="" data-am-ucheck> 商品属性1
-      						</label>
-      						<label class="am-radio-inline am-success">
-        						<input type="radio" name="radio3" value="" data-am-ucheck> 商品属性2
-      						</label>
-    					</div>
-  					</td>
+  						<form class="dynamicWrapper">
+							<div class="row mb5">
+								<table>
+									<tr>
+										<td class="td1">
+											<a href="#" class="dynamicAdd" ><i class="fa fa-plus-square-o">属性</i></a>
+										</td>
+										<td class="td3">
+											<input type="text" name="product-0" id="product-0" style="width: 100%;">
+										</td>
+										<td class="td2">
+											<a href="#" class="dynamicRemove" ><i class="fa fa-minus-square-o">属性</i></a>
+										</td>
+										<td class="td2">
+											<span>价格</span>
+										</td>
+										<td class="td3">
+											<input type="text" name="product-0" id="product-0" style="width: 100%;">
+										</td>
+									</tr>
+								</table>
+							</div>
+						</form>
   				</tr>
   				<tr>
   					<td>选择分类</td>
@@ -212,7 +226,11 @@
   		</div>
 	</div>
 	
-	
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.dynamic-rows.min.js"></script>
+<script>
+$('.dynamicWrapper').ssdDynamicRows();
+</script>	
 
 <script>
   $(function() {
