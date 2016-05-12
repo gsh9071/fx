@@ -110,10 +110,10 @@
   					<td>
   						 <div class="am-form-group">
       						<label class="am-radio-inline">
-        						<input type="radio"  value="" name="docInlineRadio"> 包邮
+        						<input type="radio" value="1" name="docInlineRadio" data-am-ucheck onclick="youfei.disabled=true;"> 包邮
       						</label>
       						<label class="am-radio-inline">
-        						<input type="radio" name="docInlineRadio"> 不包邮
+        						<input type="radio" value="0" name="docInlineRadio" data-am-ucheck onclick="youfei.disabled=false;"> 不包邮
       						</label>
     					</div>
   					</td>
@@ -121,7 +121,7 @@
   				<tr>
   					<td>邮费</td>
   					<td>
-  						<input type="text" class="am-form-field am-radius" placeholder="邮费" />
+  						<input type="text" class="am-form-field am-radius" placeholder="邮费" id="youfei"/>
   					</td>
   				</tr>
   				<tr>
@@ -224,6 +224,9 @@
       $('#file-list').html(fileNames);
     });
   });
+  
+  
+
 </script>
 <script src="js/jquery.min.js"></script>
 <script src="js/amazeui.min.js"></script>
