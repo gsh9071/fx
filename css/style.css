@@ -413,3 +413,9 @@ a {text-decoration: none; color: #000;}
 	border-radius: 15px;
 }
 /*用户中心-我的店铺*/
+.td1 {width: 40px;}
+.td2 {padding-left: 5px;width: 40px;}
+.td3 {max-width: 50px;}
+.row {
+	font-size: 12px;
+}
