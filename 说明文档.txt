@@ -1,0 +1,23 @@
+shoppingcart-购物车
+order-填写订单
+list-分类页
+search-搜索
+mysearch-我的搜索
+
+
+
+页面头部共同：
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/font-awesome.min.css" />
+ <link rel="stylesheet" href="css/amazeui.min.css">
+ <link rel="stylesheet" href="css/style.css">
+
+
+页尾共同
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+
+PS：user-shop-xiugai.html 该页面   不包含<script src="js/jquery.min.js"></script>×
+			      包含<script src="js/jquery-1.12.3.min.js"></script>√
+	                                           <script src="js/addel.jquery.js"></script>√
+                                                           <script src="js/amazeui.min.js"></script>√
