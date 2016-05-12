@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>填写订单</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fx-bg">
+    <div class="am-g">
+        <div class="am-u-sm-12 am-u-sm-centered p0">
+        	<!--头部导航-->
+        	<div class="fx-sx-top">
+  				<a href="production.html"> <i class="fa  fa-chevron-left ml10"></i></a>
+  				<span>填写订单</span>
+  			</div>
+            <!-- 填写订单-->
+            <div class="tq-order">
+                <!--信封-->
+                <div class="xinfeng">
+                    <div class="margin15">
+                        <h2><i class="fa  fa-user"></i>王一<i class="fa fa-phone ml10"></i>158852484215</h2>
+                        <h3>请点击获取收货人信息</h3>
+                        <h4>备注</h4>
+                        <h5>
+                            <textarea placeholder="选填，可以告诉卖家您的特殊需求，限定300字以内"></textarea></h5>
+                    </div>
+                </div>
+                <!--一个条目-->
+                <div class="tq-car-list">
+                    <div class="am-g">
+                        <div class="am-u-sm-4">
+                            <img src="img/0088.png" class="tq-car-list-img ml5" />
+                        </div>
+                        <div class="am-u-sm-8">
+                            <div class="tq-car-info">
+                                <h3>【衬衣】2016春装新款女装长袖条纹衬衣学生韩版修身百搭学院</h3>
+                                <h4>颜色：黑色</h4>
+                                <h4>尺码：s</h4>
+                            </div>
+                            <h5><span class="price">￥59.00</span><span class="jian">-</span><span class="zhi">11</span><span class="jia">+</span></h5>
+                        </div>
+                    </div>
+                    <!--订单配送信息-->
+                    <div class="tq-peisong">
+                        <h4><span class="tq-peisong-kuaidi">默认快递10元</span>配送方式</h4>
+                        <h4><span>￥110.00</span>商品合计</h4>
+                        <h4><span>￥120.00</span>店铺合计（含运费）</h4>
+                    </div>
+                </div>
+                <div class="tq-zongdingdan">
+                       <h4> <button type="submit" class="am-btn am-btn-warning tq-btn-zongdingdan">￥120.00</button>总订单：1</h4>
+                </div>
+            </div>
+            <!--商品购买按钮-->
+			
+				<button type="submit" class="am-btn am-btn-block am-btn-warning mt10">提交订单</button>
+				
+		
+          
+
+            <!--底部导航栏-->
+            <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default " id="">
+                <ul class="am-navbar-nav am-cf am-avg-sm-4">
+                    <li>
+                        <a href="" class="fx-bottom">
+                            <i class="fa fa-home mt10"></i>
+                            <span class="am-navbar-label">首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="fx-bottom">
+                            <i class="fa fa-th mt10"></i>
+                            <span class="am-navbar-label">分类</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###" class="fx-bottom">
+                            <i class="fa fa-heart mt10"></i>
+                            <span class="am-navbar-label">收藏</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="fx-bottom">
+                            <i class="fa fa-search mt10"></i>
+                            <span class="am-navbar-label">搜索</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--回到顶部-->
+            <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+                <a href="#top" title="">
+                    <i class="am-gotop-icon am-icon-hand-o-up"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /////////////////////////////加减
+            //减号状态
+            if ($(".zhi").text() <= "1") { $(".jian").addClass("hui") }
+            else { $(".jian").removeClass("hui") }
+            //减号
+            $(".jian").click(function () {
+                if ($(".zhi").text() <= "1") {
+                    $(".jian").addClass("hui")
+                }
+                else {
+                    $(".zhi").text(parseInt($(".zhi").text()) - 1);
+                    if ($(".zhi").text() <= "1") {
+                        $(".jian").addClass("hui")
+                    }
+                }
+
+            })
+            //加号
+            $(".jia").click(function () {
+
+                $(".zhi").text(parseInt($(".zhi").text()) + 1); $(".jian").removeClass("hui")
+            })
+            //////////全选
+            $(".allcheck").click(function () {
+                if ($(this).is(':checked')) {
+                    $(".check").uCheck('check')
+                } else {
+                    $(".check").uCheck('uncheck')
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>

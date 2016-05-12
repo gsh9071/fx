@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商城首页</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fx-bg">
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+        <div class="am-header-left am-header-nav">
+            <a href="#doc-oc-demo1" data-am-offcanvas>
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <h1 class="am-header-title">
+           我的搜索
+        </h1>
+        <div class="am-header-right am-header-nav">
+            <a href="#right-link" class="">
+                <i class="fa  fa-comment-o"></i>
+            </a>
+        </div>
+    </header>
+    <div class="am-g">
+        <div class="am-u-sm-12 am-u-sm-centered p0">
+            <!-- 头部侧边栏内容 -->
+            <div id="doc-oc-demo1" class="am-offcanvas">
+                <div class="am-offcanvas-bar fx-user-bg">
+                    <div class="am-offcanvas-content">
+                        <div class="fx-user-l-top mt10">
+                            <a href="">
+                                <img src="i/app-icon72x72@2x.png" /></a>
+                        </div>
+                        <div class="mt10">
+                            <ul class="fx-user-txt">
+                                <li>昵称：王毅</li>
+                                <li>等级：消费商</li>
+                                <li>已认证</li>
+                                <li>关注时间：2016-01-01</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--搜索列表-->
+            <div class="tq-paixu">
+                <ul class="am-avg-sm-4 ">
+                    <li class="active">综合</li>
+                    <li>销量</li>
+                    <li class="price-paixu">价格<span><!--价格上升下降图片，不能删除--></span></li>
+                    <li>热度</li>
+                </ul>
+            </div>
+            <!-- 产品列表-->
+            <div class="tq-product-list">
+                <!--一个一-->
+                <div class="tq-product">
+                    <div class="overh">
+                        <div class="am-fl margin10">
+                            <div class="tq-product-img">
+                                <img src="img/0088.png" />
+                            </div>
+                        </div>
+                        <h3>青岛可米网络青岛可米网络青岛可米网络青岛可米网络</h3>
+                        <h4>已售 100 件</h4>
+                        <h5><button type="submit" class="am-btn am-btn-warning am-btn-xs am-fr">删除</button>￥59.00</h5>
+                    </div>
+                    <h6></h6>
+                </div>
+                <!--一个一-->
+                <div class="tq-product">
+                    <div class="overh">
+                        <div class="am-fl margin10">
+                            <div class="tq-product-img">
+                                <img src="img/001.jpg" />
+                            </div>
+                        </div>
+                        <h3>青岛可米网络青岛可米网络青岛可米网络青岛可米网络</h3>
+                        <h4>已售 100 件</h4>
+                        <h5><button type="submit" class="am-btn am-btn-warning am-btn-xs am-fr">删除</button>￥59.00</h5>
+                    </div>
+                    <h6></h6>
+                </div>
+            </div>
+            <!--分类列表end-->
+            <div class="footer">
+                copyright 2016-2018 青岛可米网络版权所有
+            </div>
+            <!--底部导航栏-->
+            <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default " id="">
+                <ul class="am-navbar-nav am-cf am-avg-sm-4">
+                    <li>
+                        <a href="" class="fx-bottom fx-bottom-on">
+                            <i class="fa fa-home mt10"></i>
+                            <span class="am-navbar-label">首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="fx-bottom">
+                            <i class="fa fa-th mt10"></i>
+                            <span class="am-navbar-label">分类</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###" class="fx-bottom">
+                            <i class="fa fa-heart mt10"></i>
+                            <span class="am-navbar-label">收藏</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="fx-bottom">
+                            <i class="fa fa-search mt10"></i>
+                            <span class="am-navbar-label">搜索</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--回到顶部-->
+            <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+                <a href="#top" title="">
+                    <i class="am-gotop-icon am-icon-hand-o-up"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        //搜索框的代码
+        $(document).ready(function () {
+            $(".fa-close").click(function () {
+                $(this).parent("span").remove();
+            })
+            $(".tq-text-search").focusin(function () {
+                $('.tq-flag').hide();
+            })
+            $(".tq-text-search").focusout(function () {
+                if ($(".tq-text-search").val() == "") {
+                    $('.tq-flag').show();
+                }
+            })
+            //排序代码
+            $('.tq-paixu ul li').click(function () {
+                $('.tq-paixu ul li').removeClass('active');
+                $(this).addClass('active');
+                if ($(this).hasClass('price-paixu')) {
+
+                    if ($(this).hasClass('price1')) {
+                        $(this).removeClass('price1');
+                        $(this).addClass('price2');
+                    } else {
+                        $(this).removeClass('price2');
+                        $(this).addClass('price1');
+                    }
+                } else {
+                    $('.price-paixu').removeClass('price1');
+                    $('.price-paixu').removeClass('price2');
+                }
+
+            })
+
+        })
+    </script>
+    <script src="js/amazeui.min.js"></script>
+</body>
+</html>
