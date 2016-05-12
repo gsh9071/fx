@@ -12,6 +12,20 @@
   	<link rel="stylesheet" href="css/app.css">
   	<link rel="stylesheet" href="css/shop.css" />
   	<link rel="stylesheet" href="css/style.css"></link>
+  	<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/addel.jquery.js"></script>
+<script>
+$(document).ready(function () {
+	$('.addel').addel({
+		classes: {
+			target: 'target'
+		},
+		animation: {
+			duration: 300
+		}
+	})
+});
+</script>
 </head>
 <body class="fx-bg">
 
@@ -44,29 +58,41 @@
   				<tr>
   					<td>商品属性</td>
   					<td>
-  						<div class="dynamicWrapper">
-							<div class="row mb5">
-								<table>
-									<tr>
-										<td class="td1">
-											<a href="#" class="dynamicAdd" ><i class="fa fa-plus-square-o">属性</i></a>
-										</td>
-										<td class="td3">
-											<input type="text" name="product-0" id="product-0" style="width: 100%;">
-										</td>
-										<td class="td2">
-											<a href="#" class="dynamicRemove" ><i class="fa fa-minus-square-o">属性</i></a>
-										</td>
-										<td class="td2">
+  						<div class="addel">
+  							<table>
+  								<tbody>
+  									<tr>
+  										<td class="td1">
+  											<a href="#" class="addel-add"><i class="fa fa-plus-square-o">属性</i></a>
+  										</td>
+  										<td  class="td3">
+  											<input type="text" name="contacts[]" class="form-control" style="width: 100%;">
+  										</td>
+  										<td class="td2">
 											<span>价格</span>
 										</td>
 										<td class="td3">
-											<input type="text" name="product-0" id="product-0" style="width: 100%;">
+											<input type="text" name="contacts[]" id="form-control" style="width: 100%;">
 										</td>
-									</tr>
-								</table>
-							</div>
+  									</tr>
+  									<tr class="target" style="display: none;">
+  										<td class="td1">
+  											<a href="#" class="addel-delete"><i class="fa fa-minus-square-o">属性</i></a>
+  										</td>
+  										<td  class="td3">
+  											<input type="text" name="contacts[]" class="form-control" style="width: 100%;">
+  										</td>
+  										<td class="td2">
+											<span>价格</span>
+										</td>
+										<td class="td3">
+											<input type="text" name="contacts[]" id="form-control" style="width: 100%;">
+										</td>
+  									</tr>
+  								</tbody>
+  							</table>
 						</div>
+					</td>
   				</tr>
   				<tr>
   					<td>选择分类</td>
@@ -226,11 +252,11 @@
   		</div>
 	</div>
 	
-<script src="js/jquery-2.1.3.min.js"></script>
+<!--<script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/jquery.dynamic-rows.js"></script>
 <script>
 $('.dynamicWrapper').ssdDynamicRows();
-</script>	
+</script>	-->
 
 <script>
   $(function() {
@@ -246,7 +272,7 @@ $('.dynamicWrapper').ssdDynamicRows();
   
 
 </script>
-<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.min.js"></script>-->
 <script src="js/amazeui.min.js"></script>
 </body>
 </html>
