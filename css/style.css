@@ -573,7 +573,7 @@ a {text-decoration: none; color: #000;}
 	border:none;
 	border-radius:4px 4px 4px 4px;
 	color:#f75a53;
-	position:absolute;
+	/*position:absolute;*//*gsh修改*/
 	margin-left:-30px;
 	width:30px;
 	padding:0px;
@@ -950,6 +950,19 @@ a {text-decoration: none; color: #000;}
    margin-left:120px;
 }
 
+.fx-top-search {
+	background: #fff !important;
+}
 
-
-
+.am-input-group-label {
+	padding: 0;
+}
+.am-selected {width: 100%;}
+.am-btn-sec {
+  color: #f75a53;
+  background-color: #fff;
+  border: none;
+}
+.fx-top-input {
+	border: 1px solid #fff;
+}
